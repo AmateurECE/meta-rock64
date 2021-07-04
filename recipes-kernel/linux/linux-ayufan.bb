@@ -38,3 +38,5 @@ COMPATIBLE_MACHINE = "(rock64)"
 
 FILES_${KERNEL_PACKAGE_NAME}-base += "${nonarch_base_libdir}/modules/${KERNEL_VERSION}/modules.builtin.modinfo"
 deltask kernel_configme
+
+do_kernel_configcheck[noexec] = "1"
